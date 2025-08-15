@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QuranGlow - Color Tajweed Reader</title>
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font for UI -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+  </style>
+</head>
+<body class="bg-gray-950 text-gray-100">
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center justify-center px-6 bg-gradient-to-br from-black via-gray-900 to-gray-800">
+    <div class="text-center max-w-2xl">
+      <h1 class="text-5xl md:text-6xl font-extrabold mb-6 text-teal-300">QuranGlow</h1>
+      <p class="text-xl md:text-2xl mb-10 text-gray-300">Ad-free. Tajweed-colored. A focused Quran reader for the soul.</p>
+      <a href="quran.html" class="inline-block bg-teal-500 hover:bg-teal-400 text-white text-lg px-8 py-3 rounded-full transition shadow-lg">
+        Start Reciting
+      </a>
+    </div>
+  </section>
+
+  <!-- Tajweed Demo -->
+  <section id="recite" class="py-20 bg-gradient-to-tr from-gray-900 to-black px-6">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-teal-300 mb-8">Color Tajweed Preview</h2>
+      <p class="text-gray-400 mb-8">Each color highlights a Tajweed rule to help you recite properly.</p>
+      <div class="glass text-3xl p-10 rounded-xl shadow-xl border border-teal-600 leading-loose">
+        <span class="text-blue-400">ال</span><span class="text-white">رَّ</span><span class="text-red-400">حْمَـٰ</span><span class="text-green-400">نِ</span><br/>
+        <span class="text-purple-400">الرَّحِيمِ</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="py-24 px-6 bg-gray-950">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-white mb-4">Built for Readers Who Care</h2>
+      <p class="text-gray-400 mb-12 max-w-xl mx-auto">Everything you need. Nothing you don’t. Simple. Clean. Designed for calm reflection and fluent Tajweed recitation.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 text-left">
+        <div class="glass p-6 rounded-xl shadow-lg border border-teal-700">
+          <h3 class="text-xl font-semibold text-teal-300 mb-2">Color Tajweed</h3>
+          <p class="text-gray-300">Madd, Qalqala, Ghunna & more highlighted to help you recite accurately.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg border border-teal-700">
+          <h3 class="text-xl font-semibold text-teal-300 mb-2">Zero Ads</h3>
+          <p class="text-gray-300">No distractions. Just the Quran. 100% clean interface for deep focus.</p>
+        </div>
+        <div class="glass p-6 rounded-xl shadow-lg border border-teal-700">
+          <h3 class="text-xl font-semibold text-teal-300 mb-2">Mobile Ready</h3>
+          <p class="text-gray-300">Optimized for phones & tablets. Read anywhere, anytime, even offline.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="py-24 bg-gradient-to-r from-black via-gray-900 to-black px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="text-4xl font-bold text-teal-300 mb-6">Focus. Reflect. Recite.</h2>
+      <p class="text-gray-400 text-lg max-w-2xl mx-auto">This isn’t just another Quran app. It’s a space where your heart slows down, your eyes lock onto the verses, and your tongue flows with Tajweed. No signups, no marketing. Just the Words.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="py-24 bg-gray-950 px-6 text-center">
+    <h2 class="text-4xl font-bold text-white mb-6">Start Your Journey</h2>
+    <p class="text-gray-400 mb-10 max-w-xl mx-auto">No app to install. Fully browser based. Click the button and begin reading now.</p>
+    <a href="quran.html" class="bg-teal-600 hover:bg-teal-500 text-white text-lg px-10 py-4 rounded-full transition shadow-xl">
+      Start Reciting Now
+    </a>
+  </section>
+
+</body>
+</html>
