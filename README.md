@@ -11,7 +11,7 @@ All the source code for this project is released under the GNU General Public Li
 
 ---
 
-IMPORTANT NOTICE: RESTRICTIONS ON `quran-simple.txt`
+# IMPORTANT NOTICE: RESTRICTIONS ON `quran-simple.txt`
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0), which allows you to use, modify, and distribute the code under the same license. HOWEVER, due to the sacred nature of the Holy Quran, the file `quran-simple.txt` is subject to strict additional restrictions:
 
