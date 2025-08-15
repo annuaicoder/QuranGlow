@@ -46,6 +46,12 @@
         z-index: 50;
         background: var(--bg);
         border-bottom: 1px solid var(--border);
+        transition: transform 0.3s ease;
+      }
+      @media (max-width: 640px) {
+        header.reading-mode {
+          transform: translateY(-100%);
+        }
       }
       header .controls {
         display: grid;
@@ -520,7 +526,16 @@
           $('nextBtn').disabled = true;
           $('prevBtnBottom').disabled = true;
           $('nextBtnBottom').disabled = true;
+          // Show header on mobile when no Juz selected
+          if (window.innerWidth <= 640) {
+            document.querySelector('header').classList.remove('reading-mode');
+          }
           return;
+        }
+        
+        // Hide header on mobile when reading
+        if (window.innerWidth <= 640) {
+          document.querySelector('header').classList.add('reading-mode');
         }
 
         const start = pageIndex * pageSize;
@@ -545,7 +560,9 @@
         $('nextBtn').disabled = !canNext;
         $('prevBtnBottom').disabled = !canPrev;
         $('nextBtnBottom').disabled = !canNext;
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        // Scroll to top, but account for hidden header on mobile
+        const scrollTarget = window.innerWidth <= 640 ? 0 : 0;
+        window.scrollTo({ top: scrollTarget, behavior: 'smooth' });
       }
 
       function onChangeJuz(j) {
@@ -657,6 +674,10 @@
         $('settingsBtn').addEventListener('click', () => {
           $('settingsPanel').classList.add('open');
           $('settingsOverlay').classList.add('open');
+          // Temporarily show header when settings open
+          if (window.innerWidth <= 640) {
+            document.querySelector('header').classList.remove('reading-mode');
+          }
         });
         
         $('closeSettings').addEventListener('click', closeSettings);
@@ -665,6 +686,10 @@
         function closeSettings() {
           $('settingsPanel').classList.remove('open');
           $('settingsOverlay').classList.remove('open');
+          // Hide header again if Juz is selected
+          if (window.innerWidth <= 640 && currentJuz) {
+            document.querySelector('header').classList.add('reading-mode');
+          }
         }
         
         // Settings controls
