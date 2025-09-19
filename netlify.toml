@@ -1,0 +1,37 @@
+[build]
+  publish = "."
+  command = "echo 'Static site - no build required'"
+
+[build.environment]
+  # Enable Git LFS for large files
+  GIT_LFS_ENABLED = "true"
+
+[[headers]]
+  for = "/*.mp3"
+  [headers.values]
+    Content-Type = "audio/mpeg"
+    Cache-Control = "public, max-age=31536000"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Handle large files with Git LFS
+[build.processing]
+  skip_processing = false
+
+[build.processing.css]
+  bundle = false
+  minify = false
+
+[build.processing.js]
+  bundle = false
+  minify = false
+
+# Ensure audio files are served with correct MIME types
+[[redirects]]
+  from = "/*.mp3"
+  to = "/:splat.mp3"
+  status = 200
+  headers = {Content-Type = "audio/mpeg"}

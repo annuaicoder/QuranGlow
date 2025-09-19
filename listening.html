@@ -218,9 +218,12 @@
   <script>
     // Audio player functionality
     document.addEventListener('DOMContentLoaded', function() {
+      console.log('DOM loaded, initializing audio players...');
       const audioControls = document.querySelectorAll('.audio-controls');
+      console.log('Found audio controls:', audioControls.length);
       
-      audioControls.forEach(control => {
+      audioControls.forEach((control, index) => {
+        console.log(`Initializing audio player ${index + 1}`);
         const audio = control.querySelector('audio');
         const playBtn = control.querySelector('.play-btn');
         const playIcon = control.querySelector('.play-icon');
@@ -238,32 +241,76 @@
           return `${mins}:${secs.toString().padStart(2, '0')}`;
         }
         
+        // Debug audio source
+        const audioSrc = audio.src || audio.querySelector('source').src;
+        console.log('Audio source:', audioSrc);
+        console.log('Audio element:', audio);
+        console.log('Audio ready state:', audio.readyState);
+        console.log('Audio network state:', audio.networkState);
+        
+        // Check if we can access the audio file
+        fetch(audioSrc, { method: 'HEAD' })
+          .then(response => {
+            console.log('Audio file accessibility check:', response.status, response.statusText);
+            console.log('Content-Type:', response.headers.get('content-type'));
+            console.log('Content-Length:', response.headers.get('content-length'));
+            if (!response.ok) {
+              console.error('Audio file not accessible:', response.status);
+            }
+          })
+          .catch(error => {
+            console.error('Error checking audio file:', error);
+          });
+        
+        // Try to load the audio immediately
+        audio.load();
+        
         // Load metadata
         audio.addEventListener('loadedmetadata', () => {
+          console.log('Audio metadata loaded:', audio.duration);
           durationEl.textContent = formatTime(audio.duration);
         });
         
+        // Audio can play
+        audio.addEventListener('canplay', () => {
+          console.log('Audio can play');
+        });
+        
+        // Audio loading started
+        audio.addEventListener('loadstart', () => {
+          console.log('Audio loading started');
+        });
+        
         // Play/Pause functionality
-        playBtn.addEventListener('click', () => {
+        playBtn.addEventListener('click', async () => {
+          console.log('Play button clicked, audio paused:', audio.paused);
+          
           if (audio.paused) {
-            // Pause all other audio players
-            audioControls.forEach(otherControl => {
-              const otherAudio = otherControl.querySelector('audio');
-              const otherPlayIcon = otherControl.querySelector('.play-icon');
-              const otherPauseIcon = otherControl.querySelector('.pause-icon');
+            try {
+              // Pause all other audio players
+              audioControls.forEach(otherControl => {
+                const otherAudio = otherControl.querySelector('audio');
+                const otherPlayIcon = otherControl.querySelector('.play-icon');
+                const otherPauseIcon = otherControl.querySelector('.pause-icon');
+                
+                if (otherAudio !== audio && !otherAudio.paused) {
+                  otherAudio.pause();
+                  otherPlayIcon.classList.remove('hidden');
+                  otherPauseIcon.classList.add('hidden');
+                }
+              });
               
-              if (otherAudio !== audio && !otherAudio.paused) {
-                otherAudio.pause();
-                otherPlayIcon.classList.remove('hidden');
-                otherPauseIcon.classList.add('hidden');
-              }
-            });
-            
-            audio.play();
-            playIcon.classList.add('hidden');
-            pauseIcon.classList.remove('hidden');
+              await audio.play();
+              console.log('Audio started playing');
+              playIcon.classList.add('hidden');
+              pauseIcon.classList.remove('hidden');
+            } catch (error) {
+              console.error('Error playing audio:', error);
+              alert('Error playing audio: ' + error.message);
+            }
           } else {
             audio.pause();
+            console.log('Audio paused');
             playIcon.classList.remove('hidden');
             pauseIcon.classList.add('hidden');
           }
@@ -301,9 +348,36 @@
         // Handle audio loading errors
         audio.addEventListener('error', (e) => {
           console.error('Audio loading error:', e);
+          console.error('Error code:', audio.error ? audio.error.code : 'Unknown');
+          console.error('Error message:', audio.error ? audio.error.message : 'Unknown');
           playBtn.disabled = true;
           playBtn.classList.add('opacity-50', 'cursor-not-allowed');
           currentTimeEl.textContent = 'Error';
+          
+          // Show user-friendly error message
+          const errorMessages = {
+            1: 'Audio loading was aborted',
+            2: 'Network error occurred',
+            3: 'Audio decoding failed',
+            4: 'Audio format not supported'
+          };
+          const errorCode = audio.error ? audio.error.code : 0;
+          const errorMsg = errorMessages[errorCode] || 'Unknown audio error';
+          alert('Audio Error: ' + errorMsg);
+        });
+        
+        // Test if audio can be loaded
+        audio.addEventListener('loadeddata', () => {
+          console.log('Audio data loaded successfully');
+        });
+        
+        // Check for network state
+        audio.addEventListener('stalled', () => {
+          console.log('Audio loading stalled');
+        });
+        
+        audio.addEventListener('waiting', () => {
+          console.log('Audio waiting for data');
         });
       });
     });
