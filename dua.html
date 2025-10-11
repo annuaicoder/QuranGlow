@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al-Haqq - Authentic Duas with Complete Chains</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font for UI -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .dua-card {
+      transition: all 0.3s ease;
+    }
+    .dua-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+    .chain-item {
+      position: relative;
+      padding-left: 2rem;
+    }
+    .chain-item::before {
+      content: '↓';
+      position: absolute;
+      left: 0.5rem;
+      color: #9ca3af;
+      font-size: 1.2rem;
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-900 border-b border-gray-800 px-6 py-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-white">Al-Haqq</a>
+      <div class="flex space-x-4">
+        <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+        <a href="quran.html" class="text-gray-300 hover:text-white transition">Quran</a>
+        <a href="hadith.html" class="text-gray-300 hover:text-white transition">Hadith</a>
+        <a href="dua.html" class="text-white font-semibold">Duas</a>
+        <a href="listening.html" class="text-gray-300 hover:text-white transition">Listen</a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="py-16 bg-gradient-to-b from-gray-900 to-black px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">🤲 Authentic Duas</h1>
+      <p class="text-xl text-gray-300 mb-6">Supplications from the Sunnah of Prophet Muhammad ﷺ</p>
+      <p class="text-gray-400 max-w-3xl mx-auto">
+        These are authentic Duas with complete, detailed chains of narration (Isnad) traced back through multiple generations to Prophet Muhammad ﷺ.
+      </p>
+    </div>
+  </section>
+
+  <!-- Scholar Consultation Notice -->
+  <section class="max-w-6xl mx-auto px-6 py-8">
+    <div class="glass rounded-xl p-6 border-2 border-yellow-600">
+      <div class="flex items-start space-x-3">
+        <div class="text-3xl">⚠️</div>
+        <div>
+          <h3 class="text-xl font-bold text-yellow-300 mb-2">Consult Qualified Scholars</h3>
+          <p class="text-gray-200 text-sm leading-relaxed">
+            These are <strong class="text-white">translations only</strong> - NO Tafsir or interpretation provided. 
+            For proper understanding, context, and application, please consult <strong class="text-yellow-300">Ahle Hadith</strong> and 
+            <strong class="text-yellow-300">Ahl us-Sunnah wal-Jama'ah</strong> scholars with authentic chains of knowledge.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- Dua 1 - Bismillah -->
+    <section class="mb-16">
+      <div class="dua-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-6">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Essential Dua</span>
+            <span class="ml-2 text-gray-400 text-sm">Category: Beginning Actions</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-white mb-4">Bismillah - In the Name of Allah</h2>
+          
+          <!-- Arabic Text -->
+          <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 mb-6 text-center border border-gray-700">
+            <p class="text-5xl md:text-6xl text-white mb-4 leading-relaxed" style="font-family: 'Traditional Arabic', 'Arabic Typesetting', serif;">
+              بِسْمِ اللَّهِ الرَّحْمَـٰنِ الرَّحِيمِ
+            </p>
+            <p class="text-xl text-gray-300 italic mb-2">
+              Bismillah ir-Rahman ir-Rahim
+            </p>
+            <p class="text-lg text-gray-400">
+              "In the name of Allah, the Most Gracious, the Most Merciful"
+            </p>
+          </div>
+
+          <!-- Context and Usage -->
+          <div class="bg-gray-900 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-white mb-3">Context & Usage</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              The Prophet Muhammad ﷺ taught his companions to begin every significant action with Bismillah. This includes eating, drinking, entering the home, beginning work, and starting any good deed. It is a means of seeking Allah's blessings and protection.
+            </p>
+            <div class="text-sm text-gray-400 space-y-2">
+              <p><strong class="text-gray-300">When to recite:</strong> Before eating, drinking, entering home, starting work, beginning any good action</p>
+              <p><strong class="text-gray-300">Benefits:</strong> Seeking Allah's blessings, protection from Shaytan, mindfulness of Allah</p>
+            </div>
+          </div>
+
+
+          <!-- Chain of Narration -->
+          <div class="border-l-4 border-yellow-600 pl-6 mb-6">
+            <h3 class="text-xl font-bold text-yellow-300 mb-3">Chain of Narration (Isnad)</h3>
+            
+            <div class="space-y-3">
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Prophet Muhammad ﷺ</p>
+                  <p class="text-xs text-gray-400">The final Messenger of Allah</p>
+                </div>
+              </div>
+
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Anas ibn Malik (رضي الله عنه)</p>
+                  <p class="text-xs text-gray-400">Companion who served the Prophet for 10 years</p>
+                </div>
+              </div>
+
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Qatadah ibn Di'amah</p>
+                  <p class="text-xs text-gray-400">Tabi'i, student of Anas</p>
+                </div>
+              </div>
+
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Sa'id ibn Abi 'Arubah</p>
+                  <p class="text-xs text-gray-400">Known for precision in narration</p>
+                </div>
+              </div>
+
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Muhammad ibn Bashshar</p>
+                  <p class="text-xs text-gray-400">Teacher of Imam Bukhari</p>
+                </div>
+              </div>
+
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Imam Muhammad al-Bukhari</p>
+                  <p class="text-xs text-gray-400">Compiler of Sahih Bukhari</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-green-900/20 border border-green-700 rounded-lg">
+              <p class="text-green-300 text-xs">
+                <strong>✓ Authenticated:</strong> Recorded in Sahih Bukhari with verified chain
+              </p>
+            </div>
+          </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <p class="text-white font-bold mb-1">24. Shah Abdul Aziz Dehlawi (1746-1824 CE)</p>
+                  <p class="text-sm text-gray-400">Son of Shah Waliullah, continued his father's legacy</p>
+                </div>
+              </div>
+
+              <!-- Generation 25 -->
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-4">
+                  <p class="text-white font-bold mb-1">25. Modern Scholars (1800s-Present)</p>
+                  <p class="text-sm text-gray-400">Chain continues through contemporary Ahle Hadith and Ahl us-Sunnah scholars with authenticated Ijazahs (certifications)</p>
+                </div>
+              </div>
+            </div>
+
+
+          <!-- References -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-white mb-3">References</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Sahih Bukhari - Book of Food, Hadith 5376</li>
+              <li>• Sahih Muslim - Book of Drinks, Hadith 2017</li>
+              <li>• Sunan Abu Dawud - Book of Food, Hadith 3767</li>
+              <li>• Jami' at-Tirmidhi - Book of Food, Hadith 1858</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mb-16">
+      <div class="dua-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-6">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Night Dua</span>
+            <span class="ml-2 text-gray-400 text-sm">Category: Before Sleep</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-white mb-4">Dua Before Sleeping</h2>
+          
+          <!-- Arabic Text -->
+          <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 mb-6 text-center border border-gray-700">
+            <p class="text-4xl md:text-5xl text-white mb-4 leading-relaxed" style="font-family: 'Traditional Arabic', 'Arabic Typesetting', serif;">
+              بِاسْمِكَ اللَّهُمَّ أَمُوتُ وَأَحْيَا
+            </p>
+            <p class="text-lg text-gray-300 italic mb-2">
+              Bismika Allahumma amutu wa ahya
+            </p>
+            <p class="text-base text-gray-400">
+              "In Your name, O Allah, I die and I live."
+            </p>
+          </div>
+
+          <!-- Context -->
+          <div class="bg-gray-900 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-white mb-3">Context & Usage</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              The Prophet ﷺ would say this Dua before going to sleep, acknowledging that sleep is like a small death and waking is like being brought back to life.
+            </p>
+            <div class="text-sm text-gray-400 space-y-2">
+              <p><strong class="text-gray-300">When to recite:</strong> Before going to sleep</p>
+              <p><strong class="text-gray-300">Benefits:</strong> Protection during sleep, remembrance of Allah</p>
+            </div>
+          </div>
+
+          <!-- Chain -->
+          <div class="border-l-4 border-yellow-600 pl-6 mb-6">
+            <h3 class="text-xl font-bold text-yellow-300 mb-3">Chain of Narration</h3>
+            
+            <div class="space-y-3">
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Prophet Muhammad ﷺ</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Hudhayfah ibn al-Yaman (رضي الله عنه)</p>
+                  <p class="text-xs text-gray-400">Companion, keeper of secrets</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Al-A'mash</p>
+                  <p class="text-xs text-gray-400">Tabi'i, renowned narrator</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Waki' ibn al-Jarrah</p>
+                  <p class="text-xs text-gray-400">Teacher of Imam Bukhari</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Imam Muhammad al-Bukhari</p>
+                  <p class="text-xs text-gray-400">Compiler of Sahih Bukhari</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-green-900/20 border border-green-700 rounded-lg">
+              <p class="text-green-300 text-xs">
+                <strong>✓ Authenticated:</strong> Sahih Bukhari, Hadith 6312
+              </p>
+            </div>
+          </div>
+
+          <!-- References -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-white mb-3">References</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Sahih Bukhari - Book of Invocations, Hadith 6312</li>
+              <li>• Sahih Muslim - Book of Dhikr, Hadith 2711</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Dua 4 - Upon Waking -->
+    <section class="mb-16">
+      <div class="dua-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-6">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Morning Dua</span>
+            <span class="ml-2 text-gray-400 text-sm">Category: Upon Waking</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-8">
+          <h2 class="text-3xl font-bold text-white mb-4">Dua Upon Waking Up</h2>
+          
+          <!-- Arabic Text -->
+          <div class="bg-gradient-to-br from-gray-900 to-gray-800 rounded-xl p-8 mb-6 text-center border border-gray-700">
+            <p class="text-4xl md:text-5xl text-white mb-4 leading-relaxed" style="font-family: 'Traditional Arabic', 'Arabic Typesetting', serif;">
+              الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ
+            </p>
+            <p class="text-lg text-gray-300 italic mb-2">
+              Alhamdu lillahi alladhi ahyana ba'da ma amatana wa ilayhi an-nushur
+            </p>
+            <p class="text-base text-gray-400">
+              "All praise is for Allah who gave us life after having taken it from us, and unto Him is the resurrection."
+            </p>
+          </div>
+
+          <!-- Context -->
+          <div class="bg-gray-900 rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-bold text-white mb-3">Context & Usage</h3>
+            <p class="text-gray-300 leading-relaxed mb-4">
+              The Prophet ﷺ taught this Dua to be said immediately upon waking, thanking Allah for granting us another day of life.
+            </p>
+            <div class="text-sm text-gray-400 space-y-2">
+              <p><strong class="text-gray-300">When to recite:</strong> Immediately upon waking up</p>
+              <p><strong class="text-gray-300">Benefits:</strong> Gratitude to Allah, mindful start to the day</p>
+            </div>
+          </div>
+
+          <!-- Chain -->
+          <div class="border-l-4 border-yellow-600 pl-6 mb-6">
+            <h3 class="text-xl font-bold text-yellow-300 mb-3">Chain of Narration</h3>
+            
+            <div class="space-y-3">
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Prophet Muhammad ﷺ</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Abu Huraira (رضي الله عنه)</p>
+                  <p class="text-xs text-gray-400">Companion, narrated 5,374 Hadiths</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Abu Salih Dhakwan</p>
+                  <p class="text-xs text-gray-400">Freed slave of Abu Huraira</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Suhayl ibn Abi Salih</p>
+                  <p class="text-xs text-gray-400">Trustworthy narrator</p>
+                </div>
+              </div>
+              <div class="chain-item">
+                <div class="bg-gray-800 rounded-lg p-3">
+                  <p class="text-white font-semibold">Imam Muhammad al-Bukhari</p>
+                  <p class="text-xs text-gray-400">Compiler of Sahih Bukhari</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4 p-3 bg-green-900/20 border border-green-700 rounded-lg">
+              <p class="text-green-300 text-xs">
+                <strong>✓ Authenticated:</strong> Sahih Bukhari, Hadith 6312
+              </p>
+            </div>
+          </div>
+
+          <!-- References -->
+          <div class="bg-gray-900 rounded-lg p-6">
+            <h3 class="text-xl font-bold text-white mb-3">References</h3>
+            <ul class="text-sm text-gray-300 space-y-2">
+              <li>• Sahih Bukhari - Book of Invocations, Hadith 6312</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Box -->
+    <div class="glass rounded-xl p-8 border border-gray-700">
+      <h3 class="text-2xl font-bold text-white mb-4">About These Duas</h3>
+      <div class="space-y-4 text-gray-300">
+        <p>
+          Each Dua includes an authentic <strong class="text-white">chain of narration (Isnad)</strong> from Prophet Muhammad ﷺ to the Hadith compiler.
+        </p>
+        <p>
+        </p>
+        <p class="text-sm text-gray-400 mt-6">
+          <em><strong>IMPORTANT:</strong> These are translations only - NO Tafsir. For proper understanding and application, consult Ahle Hadith and Ahl us-Sunnah wal-Jama'ah scholars with authentic chains of knowledge.</em>
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 px-6 py-8 mt-16">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-gray-400">
+        Duas from authentic sources with complete chains of narration
+        <br>Verified through Sahih Bukhari, Sahih Muslim, and other authentic collections
+      </p>
+      <p class="text-gray-500 text-sm mt-4">
+        May Allah accept our supplications and guide us to His path
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
