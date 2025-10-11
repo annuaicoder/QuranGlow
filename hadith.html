@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Al-Haqq - Authentic Hadith Collection</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font for UI -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .glass {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .hadith-card {
+      transition: all 0.3s ease;
+    }
+    .hadith-card:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-black text-white min-h-screen">
+
+  <!-- Navigation -->
+  <nav class="bg-gray-900 border-b border-gray-800 px-6 py-4 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="index.html" class="text-2xl font-bold text-white">Al-Haqq</a>
+      <div class="flex space-x-4">
+        <a href="index.html" class="text-gray-300 hover:text-white transition">Home</a>
+        <a href="quran.html" class="text-gray-300 hover:text-white transition">Quran</a>
+        <a href="hadith.html" class="text-white font-semibold">Hadith</a>
+        <a href="listening.html" class="text-gray-300 hover:text-white transition">Listen</a>
+        <a href="about.html" class="text-gray-300 hover:text-white transition">About</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="py-16 bg-gradient-to-b from-gray-900 to-black px-6">
+    <div class="max-w-5xl mx-auto text-center">
+      <h1 class="text-5xl md:text-6xl font-bold text-white mb-4">📚 Authentic Hadith</h1>
+      <p class="text-xl text-gray-300 mb-6">Sayings and Teachings of Prophet Muhammad ﷺ</p>
+      <p class="text-gray-400 max-w-3xl mx-auto">
+        These are authentic Hadiths from Sahih Bukhari and Sahih Muslim - the two most trusted collections in Islam. 
+        Each Hadith includes the complete chain of narration (Isnad) to verify its authenticity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="max-w-6xl mx-auto px-6 py-12">
+
+    <!-- Sahih Bukhari Section -->
+    <section class="mb-16">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold text-white mb-2">Sahih Bukhari</h2>
+        <p class="text-gray-400">The most authentic collection of Hadith, compiled by Imam Muhammad al-Bukhari (810-870 CE)</p>
+      </div>
+
+      <!-- Hadith 1 - Actions by Intentions -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Bukhari</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 1, Hadith 1</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">Actions are Judged by Intentions</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated 'Umar bin Al-Khattab:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              I heard Allah's Messenger ﷺ saying, "The reward of deeds depends upon the intentions and every person will get the reward according to what he has intended. So whoever emigrated for worldly benefits or for a woman to marry, his emigration was for what he emigrated for."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by 'Umar bin Al-Khattab → Alqama bin Waqqas Al-Laithi → Muhammad bin Ibrahim At-Taimi → Yahya bin Sa'id Al-Ansari → Imam Muhammad al-Bukhari
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> إِنَّمَا الأَعْمَالُ بِالنِّيَّاتِ، وَإِنَّمَا لِكُلِّ امْرِئٍ مَا نَوَى
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Innama al-a'malu bin-niyyat, wa innama li-kulli imri'in ma nawa</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Bukhari, Book of Revelation, Hadith 1
+        </div>
+      </div>
+
+      <!-- Hadith 2 - Best Among You -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Bukhari</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 61, Hadith 546</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">The Best Among You</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated 'Uthman bin 'Affan:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              The Prophet ﷺ said, "The best among you (Muslims) are those who learn the Qur'an and teach it."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by 'Uthman bin 'Affan → Abu 'Abdur-Rahman As-Sulami → Sa'd bin 'Ubaidah → Abu 'Abdur-Rahman → Imam Muhammad al-Bukhari
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> خَيْرُكُمْ مَنْ تَعَلَّمَ الْقُرْآنَ وَعَلَّمَهُ
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Khairukum man ta'allama al-Qur'ana wa 'allamahu</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Bukhari, Book of Virtues of the Qur'an, Hadith 546
+        </div>
+      </div>
+
+      <!-- Hadith 3 - Smiling is Charity -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Bukhari</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 56, Hadith 130</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">Every Good Deed is Charity</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated Abu Dharr:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              The Prophet ﷺ said, "Your smiling in the face of your brother is charity, commanding good and forbidding evil is charity, your giving directions to a man lost in the land is charity for you. Your seeing for a man with bad sight is a charity for you, your removal of a rock, a thorn or a bone from the road is charity for you. Your pouring what remains from your bucket into the bucket of your brother is charity for you."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by Abu Dharr Al-Ghifari → Zayd ibn Wahb → Sulayman ibn Mihran (Al-A'mash) → Waki' ibn al-Jarrah → Imam Muhammad al-Bukhari
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> تَبَسُّمُكَ فِي وَجْهِ أَخِيكَ صَدَقَةٌ
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Tabasumuka fi wajhi akhika sadaqah</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Bukhari, Book of Jihad and Military Expeditions, Hadith 130
+        </div>
+      </div>
+    </section>
+
+    <!-- Sahih Muslim Section -->
+    <section class="mb-16">
+      <div class="mb-8">
+        <h2 class="text-3xl font-bold text-white mb-2">Sahih Muslim</h2>
+        <p class="text-gray-400">The second most authentic collection, compiled by Imam Muslim ibn al-Hajjaj (821-875 CE)</p>
+      </div>
+
+      <!-- Hadith 4 - Faith and Good Character -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Muslim</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 1, Hadith 55</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">The Most Perfect Believer</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated Abu Huraira:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              The Messenger of Allah ﷺ said: "The most perfect believer in faith is the one whose character is finest and who is kindest to his wife."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by Abu Huraira → Muhammad ibn Sirin → Ayyub al-Sakhtiyani → Hammad ibn Zayd → Imam Muslim ibn al-Hajjaj
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> أَكْمَلُ الْمُؤْمِنِينَ إِيمَانًا أَحْسَنُهُمْ خُلُقًا وَخِيَارُكُمْ خِيَارُكُمْ لِنِسَائِهِمْ
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Akmalu al-mu'minina imanan ahsanuhum khuluqan wa khiyarukum khiyarukum li-nisa'ihim</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Muslim, Book of Faith, Hadith 55
+        </div>
+      </div>
+
+      <!-- Hadith 5 - Kindness to Animals -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Muslim</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 39, Hadith 128</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">Mercy to All Creatures</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated Abu Huraira:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              Allah's Messenger ﷺ said, "While a man was walking on a road, he became very thirsty. He found a well and went down into it, drank his fill and came out. Then he saw a dog panting and licking mud because of excessive thirst. The man said, 'This dog is suffering from thirst as I did.' So he went down the well, filled his shoe with water, held it in his mouth and climbed up and gave the dog water to drink. Allah thanked him for that deed and forgave him." The people said, "O Allah's Messenger! Is there a reward for us in serving the animals?" He replied: "There is a reward for serving any living being."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by Abu Huraira → Hammam ibn Munabbih → Ma'mar ibn Rashid → 'Abdur-Razzaq ibn Hammam → Imam Muslim ibn al-Hajjaj
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> فِي كُلِّ كَبِدٍ رَطْبَةٍ أَجْرٌ
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Fi kulli kabidin ratbatin ajr</em> (In every living being there is reward)
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Muslim, Book of Greetings and Manners, Hadith 128
+        </div>
+      </div>
+
+      <!-- Hadith 6 - The Strong Believer -->
+      <div class="hadith-card glass rounded-xl p-8 mb-8 border border-gray-700">
+        <div class="flex items-start justify-between mb-4">
+          <div>
+            <span class="bg-white text-black px-3 py-1 rounded-full text-sm font-semibold">Sahih Muslim</span>
+            <span class="ml-2 text-gray-400 text-sm">Book 46, Hadith 34</span>
+          </div>
+          <span class="text-green-400 text-sm font-semibold">✓ Authentic</span>
+        </div>
+
+        <div class="mb-6">
+          <h3 class="text-xl font-bold text-white mb-3">The Strong Believer is Better</h3>
+          
+          <div class="bg-gray-900 rounded-lg p-6 mb-4">
+            <p class="text-gray-300 leading-relaxed mb-4">
+              <strong class="text-white">Narrated Abu Huraira:</strong>
+            </p>
+            <p class="text-gray-300 leading-relaxed italic mb-4">
+              The Messenger of Allah ﷺ said: "The strong believer is better and more beloved to Allah than the weak believer, although both are good. Strive for that which will benefit you, seek the help of Allah, and do not feel helpless. If anything befalls you, do not say, 'If only I had done such and such' rather say 'Qaddara Allahu wa ma sha'a fa'ala (Allah has decreed and whatever He wills, He does).' For (saying) 'If' opens (the door) to the deeds of Satan."
+            </p>
+          </div>
+
+          <div class="border-l-4 border-gray-700 pl-4 mb-4">
+            <p class="text-sm text-gray-400 mb-2"><strong class="text-gray-300">Chain of Narration (Isnad):</strong></p>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Narrated by Abu Huraira → Abu Salih Dhakwan → Al-A'raj → Abu az-Zinad → Malik ibn Anas → Imam Muslim ibn al-Hajjaj
+            </p>
+          </div>
+
+          <div class="bg-gray-800 rounded-lg p-4">
+            <p class="text-sm text-gray-300">
+              <strong>Arabic:</strong> الْمُؤْمِنُ الْقَوِيُّ خَيْرٌ وَأَحَبُّ إِلَى اللَّهِ مِنَ الْمُؤْمِنِ الضَّعِيفِ
+            </p>
+            <p class="text-sm text-gray-400 mt-2">
+              <em>Al-mu'minu al-qawiyyu khayrun wa ahabbu ila Allahi mina al-mu'mini ad-da'if</em>
+            </p>
+          </div>
+        </div>
+
+        <div class="text-sm text-gray-400">
+          <strong class="text-gray-300">Reference:</strong> Sahih Muslim, Book of Divine Decree, Hadith 34
+        </div>
+      </div>
+    </section>
+
+    <!-- Info Box -->
+    <div class="glass rounded-xl p-8 border border-gray-700">
+      <h3 class="text-2xl font-bold text-white mb-4">About These Collections</h3>
+      <div class="space-y-4 text-gray-300">
+        <p>
+          <strong class="text-white">Sahih Bukhari</strong> and <strong class="text-white">Sahih Muslim</strong> are considered the most authentic books after the Quran. Both scholars spent decades verifying each Hadith through rigorous authentication methods.
+        </p>
+        <p>
+          <strong class="text-white">Chain of Narration (Isnad):</strong> Each Hadith includes the complete chain of narrators from the Prophet ﷺ to the compiler. This ensures authenticity and allows scholars to verify the reliability of each narrator.
+        </p>
+        <p>
+          <strong class="text-white">Authentication Criteria:</strong> Scholars verified that each narrator was trustworthy, had a strong memory, met their teacher, and the chain was unbroken from the Prophet ﷺ.
+        </p>
+        <p class="text-sm text-gray-400 mt-6">
+          <em>Note: These Hadiths are presented for educational purposes. For detailed scholarly interpretation and application, please consult qualified Islamic scholars.</em>
+        </p>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-900 border-t border-gray-800 px-6 py-8 mt-16">
+    <div class="max-w-6xl mx-auto text-center">
+      <p class="text-gray-400">
+        Hadith collections from Sahih Bukhari and Sahih Muslim
+        <br>Translations and chains verified from authentic sources
+      </p>
+      <p class="text-gray-500 text-sm mt-4">
+        May Allah guide us to follow the Sunnah of Prophet Muhammad ﷺ
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
