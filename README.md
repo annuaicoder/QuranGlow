@@ -1,11 +1,8 @@
-<div style="background-color: #fff9c4; border: 1px solid #fbc02d; padding: 10px; border-radius: 5px; margin-bottom: 20px;">
-  <p style="margin: 0; font-weight: bold; color: #5d4037;">
-    🚨 PROJECT RENAMING & EXPANSION NOTICE 🚨
-  </p>
-  <p style="margin-top: 5px; margin-bottom: 0;">
-    The QuranGlow project is being **renamed to Al-Haqq**. The scope is expanding from solely the Quran to a comprehensive set of resources including the **Quran, Hadith, Tafsir (exegesis), and Azkar (supplications)**. The application's theme will also be changing to a **black and white** color scheme.
-  </p>
-</div>
+> 🚨 **PROJECT RENAMING & EXPANSION NOTICE** 🚨
+>
+> The QuranGlow project is being **renamed to Al-Haqq**.
+>
+> The scope is expanding from solely the Quran to a comprehensive set of resources including the **Quran, Hadith, Tafsir (exegesis), and Azkar (supplications)**. The application's theme will also be changing to a **black and white** color scheme.
 
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
