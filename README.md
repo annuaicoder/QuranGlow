@@ -4,6 +4,8 @@
 >
 > The scope is expanding from solely the Quran to a comprehensive set of resources including the **Quran, Hadith, Tafsir (exegesis), and Azkar (supplications)**. The application's theme will also be changing to a **black and white** color scheme.
 
+---
+
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
 
