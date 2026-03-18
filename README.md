@@ -7,6 +7,8 @@
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
 
+#
+
 **Your Complete Islamic Companion**
 
 Al-Haqq (meaning "The Truth" - one of the 99 names of Allah) is a comprehensive, all-in-one Islamic platform designed for modern Muslims. This free, ad-free application brings together everything you need for your daily spiritual practice in one beautiful, distraction-free space.
