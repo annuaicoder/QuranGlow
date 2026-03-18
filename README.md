@@ -7,7 +7,7 @@
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
 
-# Built by Al-Haq
+# Built by Al-Haqq
 
 **Your Complete Islamic Companion**
 
