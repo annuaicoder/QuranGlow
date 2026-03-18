@@ -7,7 +7,7 @@
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
 
-# Bu
+# Bui
 
 **Your Complete Islamic Companion**
 
