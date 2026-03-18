@@ -7,7 +7,7 @@
 
 # Al-Haqq (الحَقّ) ( Formerly QuranGlow )
 
-# Built by @annuaicoder
+# Built by @annuaicode
 
 **Your Complete Islamic Companion**
 
