@@ -118,4 +118,4 @@ For questions, suggestions, or issues, please open an issue on GitHub.
 
 *May Allah accept this effort and make it beneficial for Muslims worldwide. Ameen.*
 
-#
+
